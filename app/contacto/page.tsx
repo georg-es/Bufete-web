@@ -147,7 +147,7 @@ export default function ContactPage() {
 
             <div className="mt-8 overflow-hidden rounded-lg shadow-xl">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.6158193087856!2d-99.16558492463698!3d19.426854981865846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f8d7d7d7d7d7%3A0x0!2zMTnCsDI1JzM2LjciTiA5OcKwMDknNDguMCJX!5e0!3m2!1ses!2smx!4v1234567890123!5m2!1ses!2smx"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.5379685324737!2d-79.52528762416952!3d8.984339989047265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8faca8f1dbe53033%3A0xc36cc55097b15d0d!2sObarrio%2C%20Panam%C3%A1!5e0!3m2!1ses!2spa!4v1709234567890!5m2!1ses!2spa"
                 width="100%"
                 height="450"
                 style={{ border: 0 }}

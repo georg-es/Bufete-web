@@ -3,6 +3,7 @@ import { Footer } from "@/components/footer"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Award, Target, Heart, Users, Mail, Linkedin } from "lucide-react"
+import Image from "next/image"
 
 export const metadata = {
   title: "Sobre Nosotros | Bufete Jurídico Profesional",
@@ -129,8 +130,7 @@ export default function AboutPage() {
               </div>
               <div className="relative">
                 <img
-                  src="https://placehold.co/600x700?text=Law+firm+team+meeting+professional+lawyers+discussing+case+modern+office+interior"
-                  alt="Law firm team meeting professional lawyers discussing case modern office interior"
+                  src="/images/LAW FIRM.jpg"
                   className="rounded-lg shadow-xl"
                 />
               </div>

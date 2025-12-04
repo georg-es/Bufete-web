@@ -18,6 +18,7 @@ import {
   TrendingUp,
 } from "lucide-react"
 import Link from "next/link"
+import image from "next/image"
 
 export default function HomePage() {
   return (
@@ -30,8 +31,7 @@ export default function HomePage() {
         <section className="relative bg-primary py-20 text-primary-foreground md:py-32">
           <div className="absolute inset-0 overflow-hidden">
             <img
-              src="https://placehold.co/1920x800?text=Professional+law+office+interior+with+modern+furniture+and+legal+books+on+shelves+sophisticated+lighting"
-              alt="Professional law office interior with modern furniture and legal books on shelves sophisticated lighting"
+              src="/images/PROFESSIONAL LAW.jpg"
               className="h-full w-full object-cover opacity-20"
             />
           </div>
