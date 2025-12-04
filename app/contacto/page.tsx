@@ -69,7 +69,6 @@ export default function ContactPage() {
                         <div>
                           <h3 className="font-semibold">Teléfonos</h3>
                           <p className="mt-1 text-sm text-muted-foreground">
-                            Oficina: +52 (55) 1234-5678
                             <br />
                             WhatsApp: +52 (55) 8765-4321
                             <br />

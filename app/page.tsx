@@ -41,7 +41,7 @@ export default function HomePage() {
                 Defendiendo Sus Derechos con Experiencia y Dedicación
               </h1>
               <p className="mt-6 text-lg leading-relaxed text-primary-foreground/90 md:text-xl text-pretty">
-                Más de 25 años de experiencia legal brindando soluciones efectivas y personalizadas para nuestros
+                Más de 10 años de experiencia legal brindando soluciones efectivas y personalizadas para nuestros
                 clientes.
               </p>
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -69,7 +69,7 @@ export default function HomePage() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
               <div className="text-center">
-                <div className="text-4xl font-bold text-primary">25+</div>
+                <div className="text-4xl font-bold text-primary">10+</div>
                 <div className="mt-2 text-sm text-muted-foreground">Años de Experiencia</div>
               </div>
               <div className="text-center">
@@ -185,7 +185,7 @@ export default function HomePage() {
                 </div>
                 <h3 className="mt-4 font-semibold">Experiencia Comprobada</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  Más de 25 años de trayectoria exitosa defendiendo a nuestros clientes.
+                  Más de 10 años de trayectoria exitosa defendiendo a nuestros clientes.
                 </p>
               </div>
 

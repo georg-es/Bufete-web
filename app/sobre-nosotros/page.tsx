@@ -7,7 +7,7 @@ import { Award, Target, Heart, Users, Mail, Linkedin } from "lucide-react"
 export const metadata = {
   title: "Sobre Nosotros | Bufete Jurídico Profesional",
   description:
-    "Conoce nuestra historia, misión, valores y equipo de abogados expertos con más de 25 años de experiencia en el sector legal.",
+    "Conoce nuestra historia, misión, valores y equipo de abogados expertos con más de 10 años de experiencia en el sector legal.",
 }
 
 export default function AboutPage() {
@@ -108,11 +108,11 @@ export default function AboutPage() {
                 <h2 className="font-serif text-3xl font-bold text-balance md:text-4xl">Nuestra Historia</h2>
                 <div className="mt-6 space-y-4 text-muted-foreground leading-relaxed">
                   <p>
-                    Fundado en 1995, nuestro bufete nació con la visión de ofrecer servicios legales de la más alta
+                    Fundado en 2005, nuestro bufete nació con la visión de ofrecer servicios legales de la más alta
                     calidad, combinando experiencia, ética y dedicación personalizada a cada cliente.
                   </p>
                   <p>
-                    A lo largo de más de 25 años, hemos crecido hasta convertirnos en una de las firmas más respetadas
+                    A lo largo de más de 10 años, hemos crecido hasta convertirnos en una de las firmas más respetadas
                     del sector, representando a individuos, familias y empresas en casos complejos que requieren
                     experiencia especializada y compromiso genuino.
                   </p>

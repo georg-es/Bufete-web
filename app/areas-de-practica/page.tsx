@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Scale, Shield, Users, Heart, Briefcase, FileText, Building2, Home, Landmark, ArrowRight } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export const metadata = {
   title: "Áreas de Práctica | Bufete Jurídico Profesional",
@@ -26,7 +27,7 @@ export default function PracticeAreasPage() {
         "Sucesiones y testamentos",
         "Litigios civiles",
       ],
-      image: "https://placehold.co/600x400?text=Justice+scales+legal+books+civil+law+professional+office+setting",
+      image: "/images/CIVIL LAW.jpg",
     },
     {
       icon: Shield,
@@ -40,7 +41,7 @@ export default function PracticeAreasPage() {
         "Delitos contra la salud",
         "Asesoría preventiva",
       ],
-      image: "https://placehold.co/600x400?text=Courtroom+gavel+criminal+defense+legal+protection+justice+system",
+      image: "/images/CRIMINAL DEFENSE.jpg",
     },
     {
       icon: Users,
@@ -55,7 +56,7 @@ export default function PracticeAreasPage() {
         "Contratos de trabajo",
       ],
       image:
-        "https://placehold.co/600x400?text=Employment+law+workplace+rights+labor+dispute+professional+consultation",
+        "/images/EMPLOYMENT LAW.jpg",
     },
     {
       icon: Heart,
@@ -69,7 +70,7 @@ export default function PracticeAreasPage() {
         "Violencia familiar",
         "Mediación familiar",
       ],
-      image: "https://placehold.co/600x400?text=Family+law+mediation+divorce+custody+compassionate+legal+support",
+      image: "/images/FAMILY LAW.jpg",
     },
     {
       icon: Briefcase,
@@ -84,7 +85,7 @@ export default function PracticeAreasPage() {
         "Resolución de conflictos empresariales",
       ],
       image:
-        "https://placehold.co/600x400?text=Corporate+law+business+contracts+mergers+acquisitions+boardroom+meeting",
+        "/images/CORPORATE LAW.jpg",
     },
     {
       icon: FileText,
@@ -99,7 +100,7 @@ export default function PracticeAreasPage() {
         "Litigios de PI",
       ],
       image:
-        "https://placehold.co/600x400?text=Intellectual+property+patents+trademarks+copyright+protection+innovation",
+        "/images/INTELLECTUAL PROPERTY.jpg",
     },
     {
       icon: Building2,
@@ -113,7 +114,7 @@ export default function PracticeAreasPage() {
         "Condominios y fraccionamientos",
         "Litigios inmobiliarios",
       ],
-      image: "https://placehold.co/600x400?text=Real+estate+law+property+transactions+contracts+modern+buildings",
+      image: "/images/LAW PROPERTY.jpg",
     },
     {
       icon: Landmark,
@@ -127,7 +128,7 @@ export default function PracticeAreasPage() {
         "Consultoría tributaria",
         "Juicios fiscales",
       ],
-      image: "https://placehold.co/600x400?text=Tax+law+fiscal+planning+audit+compliance+financial+strategy",
+      image: "/images/FISCAL LAW.jpg",
     },
     {
       icon: Home,
@@ -141,7 +142,7 @@ export default function PracticeAreasPage() {
         "Reunificación familiar",
         "Consultoría migratoria",
       ],
-      image: "https://placehold.co/600x400?text=Immigration+law+visas+citizenship+international+legal+support",
+      image: "/images/IMMIGRATION LAW.jpg",
     },
   ]
 
