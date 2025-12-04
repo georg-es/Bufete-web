@@ -53,7 +53,7 @@ export default function ContactPage() {
                           <h3 className="font-semibold">Dirección</h3>
                           <p className="mt-1 text-sm text-muted-foreground">
                             Av. Reforma 123, Piso 5<br />
-                            Col. Juárez, Ciudad de México
+                            Parque Industrial, Ciudad de Panamá
                             <br />
                             C.P. 06600
                           </p>
