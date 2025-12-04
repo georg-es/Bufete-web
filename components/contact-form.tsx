@@ -135,9 +135,9 @@ export function ContactForm() {
 
       <div className="flex items-start gap-2">
         <input type="checkbox" id="privacidad" name="privacidad" required className="mt-1 accent-primary" disabled={isSubmitting} />
-        <Label htmlFor="privacidad" className="text-xs leading-relaxed text-muted-foreground cursor-pointer">
-          Acepto la política de privacidad.
-        </Label>
+        <a href="/privacidad" className="text-accent hover:underline font-medium" target="_blank">
+          política de privacidad
+        </a>
       </div>
 
       <Button type="submit" size="lg" className="w-full gap-2" disabled={isSubmitting}>
