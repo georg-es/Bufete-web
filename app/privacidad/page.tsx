@@ -28,74 +28,73 @@ export default function PrivacyPage() {
             <div className="prose prose-lg max-w-none">
               <h2 className="font-serif text-2xl font-bold">1. Información que Recopilamos</h2>
               <p className="mt-4 text-muted-foreground leading-relaxed">
-                Recopilamos información personal que usted nos proporciona voluntariamente al contactarnos, solicitar
-                servicios o comunicarse con nuestro bufete. Esto incluye:
+                Recopilamos únicamente la información necesaria para poder brindarle una atención legal completa, profesional y personalizada. La información puede obtenerse a través de nuestros formularios, comunicaciones por correo electrónico, reuniones presenciales o virtuales, llamadas telefónicas o cualquier vía en la que usted decida contactarnos.
+                La información personal que podemos recopilar incluye, sin limitarse a:
               </p>
               <ul className="mt-4 space-y-2 text-muted-foreground">
-                <li>Nombre completo</li>
-                <li>Información de contacto (email, teléfono, dirección)</li>
-                <li>Información relacionada con su consulta o caso legal</li>
-                <li>Documentos e información proporcionada para evaluación legal</li>
+                <li>Nombre completo y datos de identificación</li>
+                <li>Información de contacto: número de teléfono, dirección de correo electrónico y dirección física</li>
+                <li>Detalles relacionados con su consulta o situación legal</li>
+                <li>Documentos, evidencias y cualquier información entregada como parte del análisis o gestión del caso</li>
+                <li>Datos necesarios para confirmar su identidad y cumplir con requisitos profesionales o legales</li>
               </ul>
 
               <h2 className="mt-8 font-serif text-2xl font-bold">2. Uso de la Información</h2>
               <p className="mt-4 text-muted-foreground leading-relaxed">
-                Utilizamos su información personal exclusivamente para:
+                La información recopilada será utilizada exclusivamente para fines legales y administrativos vinculados a los servicios que ofrecemos. Entre ellos:
               </p>
               <ul className="mt-4 space-y-2 text-muted-foreground">
-                <li>Proporcionar servicios legales y asesoría profesional</li>
-                <li>Responder a sus consultas y comunicarnos con usted</li>
-                <li>Gestionar casos y representación legal</li>
-                <li>Cumplir con obligaciones legales y profesionales</li>
-                <li>Mejorar nuestros servicios</li>
+                <li>Brindar asesoría jurídica profesional</li>
+                <li>Evaluar la viabilidad de su caso y ofrecer soluciones legales precisas</li>
+                <li>Gestionar procesos legales, documentación, preparación de expedientes o representación ante autoridades</li>
+                <li>Responder a consultas, solicitudes o requerimientos de información</li>
+                <li>Cumplir con obligaciones legales, regulatorias o éticas que rigen la profesión</li>
+                <li>Mejorar la calidad de nuestros servicios, procesos internos y experiencia del cliente</li>
               </ul>
 
-              <h2 className="mt-8 font-serif text-2xl font-bold">3. Secreto Profesional</h2>
+              <h2 className="mt-8 font-serif text-2xl font-bold">3. Confidencialidad y Secreto Profesional</h2>
               <p className="mt-4 text-muted-foreground leading-relaxed">
-                Toda la información compartida con nuestro bufete está protegida por el secreto profesional
-                abogado-cliente establecido por ley. No compartiremos su información con terceros sin su consentimiento
-                expreso, excepto cuando sea requerido por ley o necesario para la representación legal.
+                Toda la información que usted comparta con nosotros está protegida bajo el secreto profesional abogado-cliente, amparado por las leyes vigentes.
+                Este deber de confidencialidad es absoluto y constituye uno de los pilares de la profesión jurídica.
+                Por ello:
+                No divulgamos información sin su consentimiento expreso y documentado.
+                No compartimos datos con terceros salvo que sea estrictamente necesario para la gestión de su caso (por ejemplo, peritos, notarios, o entidades judiciales) y siempre bajo acuerdos de confidencialidad.
+                Solo revelaremos información cuando exista una obligación legal que lo requiera.
+                Nuestra prioridad es que usted se sienta seguro, protegido y con plena confianza para compartir los detalles de su situación.
               </p>
 
               <h2 className="mt-8 font-serif text-2xl font-bold">4. Seguridad de Datos</h2>
               <p className="mt-4 text-muted-foreground leading-relaxed">
-                Implementamos medidas de seguridad técnicas, administrativas y físicas para proteger su información
-                personal contra acceso no autorizado, pérdida o alteración. Sin embargo, ningún método de transmisión
-                por internet es 100% seguro.
+                Toda la información que usted comparta con nosotros está protegida bajo el secreto profesional abogado-cliente, amparado por las leyes vigentes.
+                Este deber de confidencialidad es absoluto y constituye uno de los pilares de la profesión jurídica.
+                Por ello:
+                No divulgamos información sin su consentimiento expreso y documentado.
+                No compartimos datos con terceros salvo que sea estrictamente necesario para la gestión de su caso (por ejemplo, peritos, notarios, o entidades judiciales) y siempre bajo acuerdos de confidencialidad.
+                Solo revelaremos información cuando exista una obligación legal que lo requiera.
+                Nuestra prioridad es que usted se sienta seguro, protegido y con plena confianza para compartir los detalles de su situación.
               </p>
 
-              <h2 className="mt-8 font-serif text-2xl font-bold">5. Sus Derechos</h2>
-              <p className="mt-4 text-muted-foreground leading-relaxed">Usted tiene derecho a:</p>
+              <h2 className="mt-8 font-serif text-2xl font-bold">5. Derechos del Titular de Datos</h2>
+              <p className="mt-4 text-muted-foreground leading-relaxed"> Usted tiene pleno control sobre su información personal. En cualquier momento, puede ejercer los siguientes derechos:</p>
               <ul className="mt-4 space-y-2 text-muted-foreground">
-                <li>Acceder a su información personal</li>
-                <li>Rectificar datos inexactos</li>
-                <li>Solicitar la eliminación de sus datos</li>
-                <li>Oponerse al tratamiento de su información</li>
-                <li>Revocar su consentimiento en cualquier momento</li>
+                <li>Acceso: Solicitar copia de la información que tenemos sobre usted.</li>
+                <li>Rectificación: Corregir o actualizar datos que sean inexactos o incompletos.</li>
+                <li>Eliminación: Solicitar la supresión de sus datos cuando sea legalmente procedente.</li>
+                <li>Oposición: Negarse al tratamiento de su información en casos autorizados por ley.</li>
+                <li>Revocación del consentimiento: Retirar la autorización otorgada para el tratamiento de sus datos (sin afectar la legalidad del procesamiento previo).</li>
               </ul>
 
-              <h2 className="mt-8 font-serif text-2xl font-bold">6. Cookies y Tecnologías Similares</h2>
+              <h2 className="mt-8 font-serif text-2xl font-bold">6. Uso de Cookies y Tecnologías Similares</h2>
               <p className="mt-4 text-muted-foreground leading-relaxed">
-                Nuestro sitio web puede utilizar cookies para mejorar la experiencia del usuario. Puede configurar su
-                navegador para rechazar cookies, aunque esto puede afectar la funcionalidad del sitio.
+                Nuestro sitio web puede utilizar cookies para mejorar la experiencia del usuario, optimizar el rendimiento del sitio y personalizar la navegación.
+                Usted puede configurar su navegador para limitar o bloquear el uso de cookies; sin embargo, algunas funciones del sitio podrían verse afectadas.
               </p>
 
-              <h2 className="mt-8 font-serif text-2xl font-bold">7. Cambios a esta Política</h2>
+              <h2 className="mt-8 font-serif text-2xl font-bold">7. Actualizaciones de esta Política</h2>
               <p className="mt-4 text-muted-foreground leading-relaxed">
-                Nos reservamos el derecho de actualizar esta política de privacidad periódicamente. Los cambios serán
-                publicados en esta página con la fecha de actualización correspondiente.
+                Nos reservamos el derecho de modificar o actualizar esta Política de Privacidad en cualquier momento, con el fin de adaptarnos a cambios normativos, tecnológicos o internos.
+                Cualquier actualización se publicará en esta misma página con la fecha de modificación correspondiente.
               </p>
-
-              <h2 className="mt-8 font-serif text-2xl font-bold">8. Contacto</h2>
-              <p className="mt-4 text-muted-foreground leading-relaxed">
-                Si tiene preguntas sobre esta política de privacidad o el tratamiento de sus datos personales, puede
-                contactarnos en:
-              </p>
-              <ul className="mt-4 space-y-2 text-muted-foreground">
-                <li>Email: privacidad@bufetejuridico.com</li>
-                <li>Teléfono: +52 (55) 1234-5678</li>
-                <li>Dirección: Av. Reforma 123, Piso 5, Col. Juárez, Ciudad de México</li>
-              </ul>
             </div>
           </div>
         </section>
