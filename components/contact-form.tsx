@@ -134,10 +134,14 @@ export function ContactForm() {
       </div>
 
       <div className="flex items-start gap-2">
-        <input type="checkbox" id="privacidad" name="privacidad" required className="mt-1 accent-primary" disabled={isSubmitting} />
-        <a href="/privacidad" className="text-accent hover:underline font-medium" target="_blank">
-          política de privacidad
-        </a>
+        <input type="checkbox" id="privacidad" name="privacidad" required className="mt-1" />
+        <Label htmlFor="privacidad" className="text-xs leading-relaxed text-muted-foreground">
+          Acepto la{" "}
+          <a href="/privacidad" className="text-accent hover:underline">
+            política de privacidad
+          </a>{" "}
+          y autorizo el tratamiento de mis datos personales para fines de contacto y asesoría legal.
+        </Label>
       </div>
 
       <Button type="submit" size="lg" className="w-full gap-2" disabled={isSubmitting}>
