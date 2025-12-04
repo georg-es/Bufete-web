@@ -3,7 +3,7 @@ import { Footer } from "@/components/footer"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 import { ContactForm } from "@/components/contact-form"
 import { Card, CardContent } from "@/components/ui/card"
-import { MapPin, Phone, Mail, Clock } from "lucide-react"
+import { Globe, Phone, Mail, Clock } from "lucide-react"
 
 export const metadata = {
   title: "Contacto | Bufete Jurídico Profesional",
@@ -47,15 +47,17 @@ export default function ContactPage() {
                     <Card>
                       <CardContent className="flex items-start gap-4 p-6">
                         <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-accent/10">
-                          <MapPin className="h-6 w-6 text-accent" />
+                          {/* Icono de Mundo/Cobertura */}
+                          <Globe className="h-6 w-6 text-accent" />
                         </div>
                         <div>
-                          <h3 className="font-semibold">Dirección</h3>
-                          <p className="mt-1 text-sm text-muted-foreground">
-                            Av. Reforma 123, Piso 5<br />
-                            Parque Industrial, Ciudad de Panamá
+                          <h3 className="font-semibold">Zona de Cobertura</h3>
+                          <p className="mt-1 text-sm text-muted-foreground leading-relaxed">
+                            Brindamos representación legal y asistencia en juzgados de toda la <strong>Ciudad de Panamá</strong> y <strong>Provincias Centrales</strong>.
                             <br />
-                            C.P. 06600
+                            <span className="text-xs italic opacity-80 mt-1 block">
+                              *Reuniones presenciales disponibles bajo cita previa.
+                            </span>
                           </p>
                         </div>
                       </CardContent>
@@ -70,9 +72,9 @@ export default function ContactPage() {
                           <h3 className="font-semibold">Teléfonos</h3>
                           <p className="mt-1 text-sm text-muted-foreground">
                             <br />
-                            WhatsApp: +52 (55) 8765-4321
+                            WhatsApp: +507 6817-8670
                             <br />
-                            Emergencias: +52 (55) 9999-0000
+                            Celular: +507 6817-8670
                           </p>
                         </div>
                       </CardContent>
@@ -104,9 +106,9 @@ export default function ContactPage() {
                         <div>
                           <h3 className="font-semibold">Horario de Atención</h3>
                           <p className="mt-1 text-sm text-muted-foreground">
-                            Lunes a Viernes: 9:00 - 18:00
+                            Lunes a Viernes: 8:00 am - 7:00 pm
                             <br />
-                            Sábados: 10:00 - 14:00
+                            Sábados: 8:00 am - 3:00 pm
                             <br />
                             Domingos: Cerrado
                           </p>
