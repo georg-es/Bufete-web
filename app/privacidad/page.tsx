@@ -25,7 +25,7 @@ export default function PrivacyPage() {
 
         <section className="py-16">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-            <div className="prose prose-lg max-w-none">
+            <div className="prose prose-lg max-w-none text-muted-foreground text-justify">
               <h2 className="font-serif text-2xl font-bold">1. Información que Recopilamos</h2>
               <p className="mt-4 text-muted-foreground leading-relaxed">
                 Recopilamos únicamente la información necesaria para poder brindarle una atención legal completa, profesional y personalizada. La información puede obtenerse a través de nuestros formularios, comunicaciones por correo electrónico, reuniones presenciales o virtuales, llamadas telefónicas o cualquier vía en la que usted decida contactarnos.
