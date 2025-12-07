@@ -15,7 +15,7 @@ export function Footer() {
               <div className="font-serif text-lg font-bold">Bufete Jurídico</div>
             </div>
             <p className="text-sm text-primary-foreground/80">
-              Defendiendo sus derechos con experiencia, integridad y dedicación desde 1995.
+              Defendiendo sus derechos con experiencia, integridad y dedicación desde 2005.
             </p>
           </div>
 
@@ -56,7 +56,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 shrink-0" />
-                <span>+52 (55) 1234-5678</span>
+                <span>+507 6817-8670</span>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 shrink-0" />

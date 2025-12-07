@@ -107,7 +107,7 @@ export default function AboutPage() {
             <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
               <div>
                 <h2 className="font-serif text-3xl font-bold text-balance md:text-4xl">Nuestra Historia</h2>
-                <div className="mt-6 space-y-4 text-muted-foreground leading-relaxed">
+                <div className="mt-6 space-y-4 text-muted-foreground leading-relaxed text-justify">
                   <p>
                     Fundado en 2005, nuestro bufete nació con la visión de ofrecer servicios legales de la más alta
                     calidad, combinando experiencia, ética y dedicación personalizada a cada cliente.
