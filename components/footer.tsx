@@ -52,7 +52,7 @@ export function Footer() {
             <ul className="space-y-3 text-sm text-primary-foreground/80">
               <li className="flex items-start gap-2">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0" />
-                <span>Atendemos físicamente en Ciudad de Panamá y Panamá Oeste, en el resto de provincias las trabajamos con modalidad virtual (sujeto a cambios)</span>
+                <span>Brindamos representación legal y asistencia en juzgados de toda la Ciudad de Panamá y Provincias Centrales. (Sujeto a cambios por disponibilidad).</span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 shrink-0" />
@@ -86,8 +86,10 @@ export function Footer() {
                 <span className="sr-only">Instagram</span>
               </a>
             </div>
-            <div className="mt-6">
-              <p className="text-xs text-primary-foreground/60">Horario: Lun-Vie 9:00-18:00</p>
+            <div className="mt-6 space-y-1">
+              <p className="text-xs text-primary-foreground/60">Lun - Vie: 8:00 am - 5:00 pm</p>
+              <p className="text-xs text-primary-foreground/60">Sábados: 8:00 am - 3:00 pm</p>
+              <p className="text-xs text-primary-foreground/60">Domingos: Cerrado</p>
             </div>
           </div>
         </div>

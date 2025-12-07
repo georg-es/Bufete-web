@@ -88,11 +88,11 @@ export default function ContactPage() {
                         <div>
                           <h3 className="font-semibold">Correo Electrónico</h3>
                           <p className="mt-1 text-sm text-muted-foreground">
-                            info@bufetejuridico.com
+                            info@bufetejuridicopty.com
                             <br />
-                            contacto@bufetejuridico.com
+                            contacto@bufetejuridicopty.com
                             <br />
-                            consultas@bufetejuridico.com
+                            consultas@bufetejuridicopty.com
                           </p>
                         </div>
                       </CardContent>
@@ -106,7 +106,7 @@ export default function ContactPage() {
                         <div>
                           <h3 className="font-semibold">Horario de Atención</h3>
                           <p className="mt-1 text-sm text-muted-foreground">
-                            Lunes a Viernes: 8:00 am - 7:00 pm
+                            Lunes a Viernes: 8:00 am - 5:00 pm
                             <br />
                             Sábados: 8:00 am - 3:00 pm
                             <br />

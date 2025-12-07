@@ -109,22 +109,16 @@ export default function AboutPage() {
                 <h2 className="font-serif text-3xl font-bold text-balance md:text-4xl">Nuestra Historia</h2>
                 <div className="mt-6 space-y-4 text-muted-foreground leading-relaxed text-justify">
                   <p>
-                    Fundado en 2005, nuestro bufete nació con la visión de ofrecer servicios legales de la más alta
-                    calidad, combinando experiencia, ética y dedicación personalizada a cada cliente.
+                    Fundado en 2005, GB Legal's nació como respuesta a la necesidad de un servicio jurídico que fuera más allá de la simple asesoría técnica. Nuestra visión fue clara desde el primer día: crear una firma que combinara la rigurosidad de los grandes despachos con la atención cálida y personalizada de una boutique legal. Entendimos que detrás de cada caso hay personas, familias y patrimonios que merecen ser protegidos con la más alta ética y excelencia.
                   </p>
                   <p>
-                    A lo largo de más de 10 años, hemos crecido hasta convertirnos en una de las firmas más respetadas
-                    del sector, representando a individuos, familias y empresas en casos complejos que requieren
-                    experiencia especializada y compromiso genuino.
+                    A lo largo de dos décadas de trayectoria ininterrumpida, hemos evolucionado hasta consolidarnos como una de las firmas más respetadas del sector. Hemos tenido el privilegio de representar a cientos de individuos y corporaciones en litigios complejos y negociaciones estratégicas. Este crecimiento no ha sido casualidad, sino el resultado de ganar la confianza de nuestros clientes caso tras caso, demostrando que la experiencia especializada y el compromiso genuino son la clave para obtener resultados favorables.
                   </p>
                   <p>
-                    Nuestro equipo multidisciplinario está compuesto por abogados altamente capacitados en diversas
-                    áreas del derecho, lo que nos permite ofrecer soluciones integrales y efectivas para cualquier
-                    necesidad legal que nuestros clientes puedan enfrentar.
+                    Nuestro mayor activo es nuestro capital humano. Contamos con un equipo multidisciplinario de abogados que no solo poseen una formación académica de élite, sino que se mantienen en constante actualización ante las reformas legales y las nuevas dinámicas del mercado. Esta diversidad de especialidades nos permite abordar cada desafío desde una perspectiva integral, diseñando estrategias legales 360° que blindan a nuestros clientes ante cualquier eventualidad.
                   </p>
                   <p>
-                    Hoy, seguimos manteniendo los valores fundamentales con los que iniciamos: integridad, excelencia y
-                    un compromiso inquebrantable con la justicia y los derechos de nuestros clientes.
+                     Hoy, aunque nuestra infraestructura y alcance han crecido, la esencia de GB Legal's permanece intacta. Seguimos fieles a los valores fundamentales con los que iniciamos: una integridad a toda prueba, la búsqueda incansable de la excelencia y un compromiso inquebrantable con la justicia. Miramos hacia el futuro invirtiendo en innovación y tecnología, asegurando que nuestros clientes siempre cuenten con una defensa moderna, ágil y eficaz.
                   </p>
                 </div>
               </div>
@@ -132,6 +126,7 @@ export default function AboutPage() {
                 <img
                   src="/images/LAW FIRM.jpg"
                   className="rounded-lg shadow-xl"
+                  alt="Historia del Bufete"
                 />
               </div>
             </div>
@@ -209,13 +204,13 @@ export default function AboutPage() {
             <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
               {team.map((member, index) => (
                 <Card key={index} className="overflow-hidden transition-all hover:shadow-lg">
-                  <div className="aspect-square overflow-hidden">
-                    <img
-                      src={member.image || "/placeholder.svg"}
-                      alt={`${member.name} ${member.specialty}`}
-                      className="h-full w-full object-cover transition-transform hover:scale-105"
-                    />
+                  {/* AQUÍ ESTÁ EL CAMBIO: Cuadro de privacidad en lugar de imagen */}
+                  <div className="aspect-square flex items-center justify-center bg-gray-200 text-center p-4">
+                    <span className="text-muted-foreground font-medium italic">
+                      Imagen reservada por motivos de privacidad.
+                    </span>
                   </div>
+                  
                   <CardContent className="p-6">
                     <h3 className="font-serif text-xl font-semibold">{member.name}</h3>
                     <div className="mt-1 text-sm font-medium text-accent">{member.role}</div>
