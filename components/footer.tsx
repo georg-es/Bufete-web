@@ -52,7 +52,7 @@ export function Footer() {
             <ul className="space-y-3 text-sm text-primary-foreground/80">
               <li className="flex items-start gap-2">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0" />
-                <span>Av. Principal 123, Centro, Ciudad</span>
+                <span>Atendemos físicamente en Ciudad de Panamá y Panamá Oeste, en el resto de provincias las trabajamos con modalidad virtual (sujeto a cambios)</span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 shrink-0" />
@@ -60,7 +60,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 shrink-0" />
-                <span>info@bufetejuridico.com</span>
+                <span>info@bufetejuridicopty.com</span>
               </li>
             </ul>
           </div>
