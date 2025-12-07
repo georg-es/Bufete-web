@@ -13,7 +13,7 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   // <CHANGE> Updated metadata for law firm
-  title: "Bufete Jurídico Profesional | Abogados Expertos",
+  title: "GB Legal's | Abogados Expertos",
   description:
     "Firma de abogados con amplia experiencia en derecho civil, penal, laboral, familiar y corporativo. Consulta gratuita disponible.",
   generator: "v0.app",

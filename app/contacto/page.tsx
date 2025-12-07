@@ -6,7 +6,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Globe, Phone, Mail, Clock } from "lucide-react"
 
 export const metadata = {
-  title: "Contacto | Bufete Jurídico Profesional",
+  title: "Contacto | GB Legal's",
   description:
     "Contáctenos para una consulta gratuita. Oficinas en el centro de la ciudad. Teléfono, email y horarios de atención.",
 }
@@ -156,7 +156,7 @@ export default function ContactPage() {
                 allowFullScreen={false}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Ubicación de Bufete Jurídico"
+                title="Ubicación de GB Legal's"
               />
             </div>
           </div>

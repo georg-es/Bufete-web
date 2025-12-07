@@ -3,7 +3,7 @@ import { Footer } from "@/components/footer"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 
 export const metadata = {
-  title: "Términos de Servicio | Bufete Jurídico Profesional",
+  title: "Términos de Servicio | GB Legal's",
   description: "Términos y condiciones de uso de los servicios legales de nuestro bufete.",
 }
 
@@ -28,7 +28,7 @@ export default function TermsPage() {
             <div className="prose prose-lg max-w-none">
               <h2 className="font-serif text-2xl font-bold">1. Aceptación de los Términos de Servicio</h2>
               <p className="mt-4 text-muted-foreground leading-relaxed text-justify">
-              Al acceder, consultar o contratar los servicios jurídicos ofrecidos por el Bufete Jurídico, el usuario o potencial cliente manifiesta su aceptación plena e incondicional de los presentes Términos de Servicio. Estos términos constituyen el marco regulatorio preliminar que guía la relación profesional. Si el usuario no se encuentra en total acuerdo con alguna de las estipulaciones contenidas en este documento, se le insta a abstenerse de utilizar o solicitar nuestros servicios. La confianza depositada en nuestro bufete es el cimiento de nuestra operación, y esta se inicia con la comprensión y aceptación mutua de estas bases.
+              Al acceder, consultar o contratar los servicios jurídicos ofrecidos por GB Legal's, el usuario o potencial cliente manifiesta su aceptación plena e incondicional de los presentes Términos de Servicio. Estos términos constituyen el marco regulatorio preliminar que guía la relación profesional. Si el usuario no se encuentra en total acuerdo con alguna de las estipulaciones contenidas en este documento, se le insta a abstenerse de utilizar o solicitar nuestros servicios. La confianza depositada en nuestro bufete es el cimiento de nuestra operación, y esta se inicia con la comprensión y aceptación mutua de estas bases.
               </p>
 
               <h2 className="mt-8 font-serif text-2xl font-bold">2. Alcance y Formalización de los Servicios Legales</h2>

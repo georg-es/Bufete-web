@@ -3,8 +3,8 @@ import { Footer } from "@/components/footer"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 
 export const metadata = {
-  title: "Política de Privacidad | Bufete Jurídico Profesional",
-  description: "Política de privacidad y tratamiento de datos personales de nuestro bufete jurídico.",
+  title: "Política de Privacidad | GB Legal's",
+  description: "Política de privacidad y tratamiento de datos personales en GB Legal's.",
 }
 
 export default function PrivacyPage() {

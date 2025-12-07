@@ -6,7 +6,7 @@ import { Award, Target, Heart, Users, Mail, Linkedin } from "lucide-react"
 import Image from "next/image"
 
 export const metadata = {
-  title: "Sobre Nosotros | Bufete Jurídico Profesional",
+  title: "Sobre Nosotros | GB Legal's",
   description:
     "Conoce nuestra historia, misión, valores y equipo de abogados expertos con más de 10 años de experiencia en el sector legal.",
 }

@@ -8,7 +8,7 @@ import Link from "next/link"
 import Image from "next/image"
 
 export const metadata = {
-  title: "Áreas de Práctica | Bufete Jurídico Profesional",
+  title: "Áreas de Práctica | GB Legal's",
   description:
     "Servicios legales especializados en derecho civil, penal, laboral, familiar, corporativo y más. Expertos en todas las áreas del derecho.",
 }
