@@ -25,7 +25,7 @@ export function Navigation() {
               <span className="font-serif text-2xl font-bold text-accent-foreground">J</span>
             </div>
             <div className="hidden sm:block">
-              <div className="font-serif text-xl font-bold">Bufete Jurídico</div>
+              <div className="font-serif text-xl font-bold">GB Legal's</div>
               <div className="text-xs text-primary-foreground/80">Expertos en Derecho</div>
             </div>
           </Link>

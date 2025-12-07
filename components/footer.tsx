@@ -12,7 +12,7 @@ export function Footer() {
               <div className="flex h-10 w-10 items-center justify-center rounded-md bg-accent">
                 <span className="font-serif text-xl font-bold text-accent-foreground">J</span>
               </div>
-              <div className="font-serif text-lg font-bold">Bufete Jurídico</div>
+              <div className="font-serif text-lg font-bold">GB Legal's</div>
             </div>
             <p className="text-sm text-primary-foreground/80">
               Defendiendo sus derechos con experiencia, integridad y dedicación desde 2005.
@@ -94,7 +94,7 @@ export function Footer() {
 
         <div className="mt-8 border-t border-primary-foreground/10 pt-8">
           <div className="flex flex-col items-center justify-between gap-4 text-sm text-primary-foreground/60 sm:flex-row">
-            <p>&copy; 2025 Bufete Jurídico. Todos los derechos reservados.</p>
+            <p>&copy; 2025 GB Legal's. Todos los derechos reservados.</p>
             <div className="flex gap-4">
               <Link href="/privacidad" className="hover:text-accent">
                 Política de Privacidad
