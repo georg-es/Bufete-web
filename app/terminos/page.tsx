@@ -105,7 +105,7 @@ export default function TermsPage() {
 
               <h2 className="mt-8 font-serif text-2xl font-bold">9. Jurisdicción Competente y Ley Aplicable</h2>
               <p className="mt-4 text-muted-foreground leading-relaxed text-justify">
-                Estos Términos de Servicio y, consecuentemente, el Contrato de Servicios Legales se interpretarán y regirán exclusivamente bajo las leyes sustantivas y procesales aplicables en la jurisdicción donde el bufete tiene su sede principal y donde se prestaron los servicios. Toda disputa, controversia o reclamo que surja de la interpretación o ejecución de estos términos será sometida a la competencia exclusiva de los tribunales competentes de dicha jurisdicción, renunciando expresamente las partes a cualquier otro fuero que pudiera corresponderles por razón de su domicilio presente o futuro.
+                Estos Términos de Servicio y, consecuentemente, el Contrato de Servicios Legales se interpretarán y regirán exclusivamente bajo las leyes sustantivas y procesales aplicables en la jurisdicción de la República de Panamá. Toda disputa, controversia o reclamo que surja de la interpretación o ejecución de estos términos será sometida a la competencia exclusiva de los tribunales competentes de dicha jurisdicción, renunciando expresamente las partes a cualquier otro fuero que pudiera corresponderles por razón de su domicilio presente o futuro.
               </p>
             </div>
           </div>

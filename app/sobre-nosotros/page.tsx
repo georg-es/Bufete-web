@@ -247,8 +247,8 @@ export default function AboutPage() {
               <Card className="border-2 transition-all hover:border-accent">
                 <CardContent className="p-6 text-center">
                   <Award className="mx-auto h-12 w-12 text-accent" />
-                  <div className="mt-4 font-semibold">Barra de Abogados</div>
-                  <div className="mt-2 text-sm text-muted-foreground">Miembro activo certificado</div>
+                  <div className="mt-4 font-semibold">Protección de Datos (ANTAI)</div>
+                  <div className="mt-2 text-sm text-muted-foreground">Cumplimiento Ley 81</div>
                 </CardContent>
               </Card>
 
@@ -263,7 +263,7 @@ export default function AboutPage() {
               <Card className="border-2 transition-all hover:border-accent">
                 <CardContent className="p-6 text-center">
                   <Award className="mx-auto h-12 w-12 text-accent" />
-                  <div className="mt-4 font-semibold">Asociación Nacional</div>
+                  <div className="mt-4 font-semibold">Colegio Nacional de Abogados</div>
                   <div className="mt-2 text-sm text-muted-foreground">Abogados certificados</div>
                 </CardContent>
               </Card>
