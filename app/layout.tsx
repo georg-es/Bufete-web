@@ -4,6 +4,7 @@ import type { Metadata } from "next"
 import { Geist, Playfair_Display } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
+import Image from "next/image"
 
 const geistSans = Geist({ subsets: ["latin"] })
 const playfair = Playfair_Display({
@@ -18,21 +19,8 @@ export const metadata: Metadata = {
     "Firma de abogados con amplia experiencia en derecho civil, penal, laboral, familiar y corporativo. Consulta gratuita disponible.",
   generator: "v0.app",
   icons: {
-    icon: [
-      {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
-    ],
-    apple: "/apple-icon.png",
+    icon: "/images/logo1.png", 
+    apple: "/images/LOGO.png", 
   },
 }
 

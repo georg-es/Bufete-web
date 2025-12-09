@@ -1,4 +1,5 @@
 "use client"
+import Image from "next/image"
 
 import Link from "next/link"
 import { useState } from "react"
@@ -21,8 +22,13 @@ export function Navigation() {
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
-            <div className="flex h-12 w-12 items-center justify-center rounded-md bg-accent">
-              <span className="font-serif text-2xl font-bold text-accent-foreground">J</span>
+            <div className="relative h-16 w-16 overflow-hidden rounded-md">
+              <Image 
+                src="/images/logo.png"  
+                alt="Logo GB Legal's"
+                fill
+                className="object-cover"
+              />
             </div>
             <div className="hidden sm:block">
               <div className="font-serif text-xl font-bold">GB Legal's</div>

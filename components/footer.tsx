@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from "lucide-react"
+import Image from "next/image"
 
 export function Footer() {
   return (
@@ -9,9 +10,14 @@ export function Footer() {
           {/* Company Info */}
           <div>
             <div className="mb-4 flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-md bg-accent">
-                <span className="font-serif text-xl font-bold text-accent-foreground">J</span>
-              </div>
+              <div className="relative h-16 w-16 overflow-hidden rounded-md">
+                <Image 
+                  src="/images/logo.png"  
+                  alt="Logo GB Legal's"
+                  fill
+                  className="object-cover"
+                  />
+                </div>
               <div className="font-serif text-lg font-bold">GB Legal's</div>
             </div>
             <p className="text-sm text-primary-foreground/80">
