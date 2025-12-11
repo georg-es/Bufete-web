@@ -2,58 +2,39 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Award, Target, Heart, Users, Mail, Linkedin } from "lucide-react"
+import { Award, Target, Heart, Users, Briefcase, FileSearch, Scale, CheckCircle } from "lucide-react"
 import Image from "next/image"
+// 1. IMPORTAMOS EL NUEVO COMPONENTE
+import { CoverFlowCarousel } from "@/components/ui/cover-flow-carousel"
 
 export const metadata = {
   title: "Sobre Nosotros | GB Legal's",
   description:
-    "Conoce nuestra historia, misión, valores y equipo de abogados expertos con más de 10 años de experiencia en el sector legal.",
+    "Conoce nuestra historia, misión, valores y nuestra trayectoria de más de 20 años en el sector legal en Panamá.",
 }
 
 export default function AboutPage() {
-  const team = [
+  // Datos para la nueva sección de Proceso
+  const process = [
     {
-      name: "Lic. Roberto Sánchez",
-      role: "Socio Fundador",
-      specialty: "Derecho Civil y Corporativo",
-      image: "https://placehold.co/400x400?text=Professional+portrait+male+lawyer+in+suit+office+background",
-      bio: "Más de 30 años de experiencia en litigios civiles y asesoría corporativa. Especializado en contratos complejos y fusiones empresariales.",
+      icon: Briefcase,
+      title: "1. Consulta Inicial",
+      description: "Nos reunimos para escuchar su situación, entender sus necesidades y determinar la viabilidad legal de su caso.",
     },
     {
-      name: "Lic. Patricia López",
-      role: "Socia Directora",
-      specialty: "Derecho Penal y Constitucional",
-      image: "https://placehold.co/400x400?text=Professional+portrait+female+lawyer+in+business+attire+office",
-      bio: "Reconocida por su experiencia en defensa penal estratégica. Certificada en derechos humanos y garantías constitucionales.",
+      icon: FileSearch,
+      title: "2. Análisis y Estrategia",
+      description: "Nuestro equipo estudia a fondo la documentación y diseña una estrategia jurídica personalizada y efectiva.",
     },
     {
-      name: "Lic. Miguel Torres",
-      role: "Socio",
-      specialty: "Derecho Laboral",
-      image: "https://placehold.co/400x400?text=Professional+portrait+male+attorney+formal+suit+confident+pose",
-      bio: "Experto en conflictos laborales y relaciones colectivas de trabajo. Ha representado a empresas y trabajadores en casos de alto perfil.",
+      icon: Scale,
+      title: "3. Representación Legal",
+      description: "Ejecutamos las acciones legales necesarias, representándolo ante tribunales o contrapartes con firmeza.",
     },
     {
-      name: "Lic. Carmen Morales",
-      role: "Abogada Senior",
-      specialty: "Derecho de Familia",
-      image: "https://placehold.co/400x400?text=Professional+portrait+female+attorney+elegant+business+suit",
-      bio: "Especialista en mediación familiar y custodia de menores. Su enfoque empático ha ayudado a cientos de familias.",
-    },
-    {
-      name: "Lic. Fernando Díaz",
-      role: "Abogado Senior",
-      specialty: "Propiedad Intelectual",
-      image: "https://placehold.co/400x400?text=Professional+portrait+male+lawyer+glasses+modern+office",
-      bio: "Certificado en marcas y patentes internacionales. Protege la innovación y creatividad de emprendedores y empresas.",
-    },
-    {
-      name: "Lic. Ana Vargas",
-      role: "Abogada Asociada",
-      specialty: "Derecho Fiscal",
-      image: "https://placehold.co/400x400?text=Professional+portrait+female+lawyer+professional+attire+smile",
-      bio: "Experta en planificación fiscal y controversias tributarias. Ayuda a optimizar la carga fiscal de personas y empresas.",
+      icon: CheckCircle,
+      title: "4. Resolución",
+      description: "Buscamos cerrar el caso obteniendo el resultado más favorable posible, manteniendo total transparencia.",
     },
   ]
 
@@ -109,16 +90,25 @@ export default function AboutPage() {
                 <h2 className="font-serif text-3xl font-bold text-balance md:text-4xl">Nuestra Historia</h2>
                 <div className="mt-6 space-y-4 text-muted-foreground leading-relaxed text-justify">
                   <p>
-                    Fundado en 2005, GB Legal's nació como respuesta a la necesidad de un servicio jurídico que fuera más allá de la simple asesoría técnica. Nuestra visión fue clara desde el primer día: crear una firma que combinara la rigurosidad de los grandes despachos con la atención cálida y personalizada de una boutique legal. Entendimos que detrás de cada caso hay personas, familias y patrimonios que merecen ser protegidos con la más alta ética y excelencia.
+                    Fundado en 2005, <strong>GB Legal's</strong> nació como respuesta a la necesidad de un servicio jurídico que
+                    fuera más allá de la simple asesoría técnica. Nuestra visión fue clara desde el primer día: crear una firma
+                    que combinara la rigurosidad de los grandes despachos con la atención cálida y personalizada de una boutique legal.
                   </p>
                   <p>
-                    A lo largo de dos décadas de trayectoria ininterrumpida, hemos evolucionado hasta consolidarnos como una de las firmas más respetadas del sector. Hemos tenido el privilegio de representar a cientos de individuos y corporaciones en litigios complejos y negociaciones estratégicas. Este crecimiento no ha sido casualidad, sino el resultado de ganar la confianza de nuestros clientes caso tras caso, demostrando que la experiencia especializada y el compromiso genuino son la clave para obtener resultados favorables.
+                    A lo largo de <strong>dos décadas de trayectoria</strong>, hemos evolucionado hasta consolidarnos como una de
+                    las firmas más respetadas del sector. Hemos tenido el privilegio de representar a cientos de individuos y
+                    corporaciones en litigios complejos, demostrando que la experiencia especializada es la clave para obtener
+                    resultados favorables.
                   </p>
                   <p>
-                    Nuestro mayor activo es nuestro capital humano. Contamos con un equipo multidisciplinario de abogados que no solo poseen una formación académica de élite, sino que se mantienen en constante actualización ante las reformas legales y las nuevas dinámicas del mercado. Esta diversidad de especialidades nos permite abordar cada desafío desde una perspectiva integral, diseñando estrategias legales 360° que blindan a nuestros clientes ante cualquier eventualidad.
+                    Nuestro equipo multidisciplinario se mantiene en constante actualización ante las reformas legales y las
+                    nuevas dinámicas del mercado. Esta diversidad de especialidades nos permite abordar cada desafío desde una
+                    perspectiva integral, diseñando estrategias legales que blindan a nuestros clientes ante cualquier eventualidad.
                   </p>
                   <p>
-                     Hoy, aunque nuestra infraestructura y alcance han crecido, la esencia de GB Legal's permanece intacta. Seguimos fieles a los valores fundamentales con los que iniciamos: una integridad a toda prueba, la búsqueda incansable de la excelencia y un compromiso inquebrantable con la justicia. Miramos hacia el futuro invirtiendo en innovación y tecnología, asegurando que nuestros clientes siempre cuenten con una defensa moderna, ágil y eficaz.
+                    Hoy, seguimos fieles a los valores fundamentales con los que iniciamos: integridad a toda prueba, excelencia
+                    y un compromiso inquebrantable con la justicia. Miramos hacia el futuro invirtiendo en innovación, asegurando
+                    una defensa moderna, ágil y eficaz.
                   </p>
                 </div>
               </div>
@@ -191,45 +181,33 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Team Section */}
-        <section className="bg-muted py-16 md:py-24">
+        {/* REEMPLAZO: Process Section con Cover Flow Carousel */}
+        <section className="bg-muted py-16 md:py-24 overflow-hidden">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center">
-              <h2 className="font-serif text-3xl font-bold text-balance md:text-4xl">Nuestro Equipo</h2>
+            <div className="text-center mb-8">
+              <h2 className="font-serif text-3xl font-bold text-balance md:text-4xl">Nuestro Proceso de Trabajo</h2>
               <p className="mt-4 text-lg text-muted-foreground text-pretty">
-                Profesionales altamente capacitados comprometidos con su éxito
+                Cómo le acompañamos paso a paso en su defensa legal
               </p>
             </div>
 
-            <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-              {team.map((member, index) => (
-                <Card key={index} className="overflow-hidden transition-all hover:shadow-lg">
-                  {/* AQUÍ ESTÁ EL CAMBIO: Cuadro de privacidad en lugar de imagen */}
-                  <div className="aspect-square flex items-center justify-center bg-gray-200 text-center p-4">
-                    <span className="text-muted-foreground font-medium italic">
-                      Imagen reservada por motivos de privacidad.
-                    </span>
-                  </div>
-                  
-                  <CardContent className="p-6">
-                    <h3 className="font-serif text-xl font-semibold">{member.name}</h3>
-                    <div className="mt-1 text-sm font-medium text-accent">{member.role}</div>
-                    <div className="mt-1 text-sm text-muted-foreground">{member.specialty}</div>
-                    <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{member.bio}</p>
-                    <div className="mt-4 flex gap-3">
-                      <a href="#" className="text-muted-foreground hover:text-accent">
-                        <Mail className="h-5 w-5" />
-                        <span className="sr-only">Email</span>
-                      </a>
-                      <a href="#" className="text-muted-foreground hover:text-accent">
-                        <Linkedin className="h-5 w-5" />
-                        <span className="sr-only">LinkedIn</span>
-                      </a>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
+            {/* 2. USAMOS EL NUEVO COMPONENTE PARA ENVOLVER LAS TARJETAS */}
+            <CoverFlowCarousel>
+              {process.map((step, index) => {
+                const Icon = step.icon
+                return (
+                  // 3. LAS TARJETAS ORIGINALES AHORA SON HIJAS DEL CARRUSEL
+                  <Card key={index} className="h-[350px] border-t-4 border-t-accent shadow-lg transition-all select-none">
+                    <CardContent className="flex h-full flex-col justify-center p-8 text-center">
+                      <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-primary text-primary-foreground mx-auto">
+                        <Icon className="h-8 w-8" />
+                      </div>
+                      <h3 className="font-serif text-2xl font-bold mb-4">{step.title}</h3>
+                      <p className="text-base leading-relaxed text-muted-foreground">{step.description}</p>
+                    </CardContent>
+                  </Card>
+                )})}
+            </CoverFlowCarousel>
           </div>
         </section>
 
@@ -247,8 +225,8 @@ export default function AboutPage() {
               <Card className="border-2 transition-all hover:border-accent">
                 <CardContent className="p-6 text-center">
                   <Award className="mx-auto h-12 w-12 text-accent" />
-                  <div className="mt-4 font-semibold">Protección de Datos (ANTAI)</div>
-                  <div className="mt-2 text-sm text-muted-foreground">Cumplimiento Ley 81</div>
+                  <div className="mt-4 font-semibold">Colegio Nacional de Abogados</div>
+                  <div className="mt-2 text-sm text-muted-foreground">Miembros activos del CNA</div>
                 </CardContent>
               </Card>
 
@@ -263,16 +241,16 @@ export default function AboutPage() {
               <Card className="border-2 transition-all hover:border-accent">
                 <CardContent className="p-6 text-center">
                   <Award className="mx-auto h-12 w-12 text-accent" />
-                  <div className="mt-4 font-semibold">Colegio Nacional de Abogados</div>
-                  <div className="mt-2 text-sm text-muted-foreground">Abogados certificados</div>
+                  <div className="mt-4 font-semibold">Protección de Datos (ANTAI)</div>
+                  <div className="mt-2 text-sm text-muted-foreground">Cumplimiento Ley 81</div>
                 </CardContent>
               </Card>
 
               <Card className="border-2 transition-all hover:border-accent">
                 <CardContent className="p-6 text-center">
                   <Award className="mx-auto h-12 w-12 text-accent" />
-                  <div className="mt-4 font-semibold">Premio Excelencia</div>
-                  <div className="mt-2 text-sm text-muted-foreground">Servicios legales 2024</div>
+                  <div className="mt-4 font-semibold">Cámara de Comercio</div>
+                  <div className="mt-2 text-sm text-muted-foreground">Sector Legal</div>
                 </CardContent>
               </Card>
             </div>
