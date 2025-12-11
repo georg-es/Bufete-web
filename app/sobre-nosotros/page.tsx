@@ -19,22 +19,22 @@ export default function AboutPage() {
     {
       icon: Briefcase,
       title: "1. Consulta Inicial",
-      description: "Nos reunimos para escuchar su situación, entender sus necesidades y determinar la viabilidad legal de su caso.",
+      description: "Nuestra primera interacción es fundamental. En esta etapa, realizamos una entrevista exhaustiva para escuchar su relato, entender sus objetivos y recopilar los antecedentes básicos. Evaluamos la situación para determinar si existe un caso legal viable, verificamos la ausencia de conflictos de interés y le ofrecemos un diagnóstico preliminar honesto sobre las posibilidades de éxito y los riesgos involucrados.",
     },
     {
       icon: FileSearch,
       title: "2. Análisis y Estrategia",
-      description: "Nuestro equipo estudia a fondo la documentación y diseña una estrategia jurídica personalizada y efectiva.",
+      description: "Una vez aceptado el caso, nuestro equipo realiza un estudio técnico profundo de la documentación y la normativa aplicable. Diseñamos una Hoja de Ruta Legal personalizada que define la estrategia a seguir. En esta fase, le presentamos una propuesta formal de servicios que detalla transparentemente los honorarios, los costos procesales y los tiempos estimados, formalizando nuestra relación mediante un contrato de servicios.",
     },
     {
       icon: Scale,
       title: "3. Representación Legal",
-      description: "Ejecutamos las acciones legales necesarias, representándolo ante tribunales o contrapartes con firmeza.",
+      description: "Ponemos la estrategia en marcha. Ya sea redactando demandas, negociando contratos o representándolo en audiencias, nuestro equipo actúa con diligencia y firmeza. Durante esta etapa, mantenemos una política de comunicación proactiva: usted recibirá actualizaciones periódicas sobre el avance de su expediente, asegurando que nunca se sienta desinformado sobre el estado de sus asuntos legales.",
     },
     {
       icon: CheckCircle,
       title: "4. Resolución",
-      description: "Buscamos cerrar el caso obteniendo el resultado más favorable posible, manteniendo total transparencia.",
+      description: "Nuestro objetivo es alcanzar la resolución más favorable posible, ya sea mediante una sentencia judicial, un acuerdo extrajudicial o la finalización de un trámite administrativo. Al concluir, le entregamos un informe final detallado, explicamos las implicaciones legales del resultado y le asesoramos sobre los pasos futuros necesarios para asegurar el cumplimiento de lo resuelto.",
     },
   ]
 
@@ -196,14 +196,29 @@ export default function AboutPage() {
               {process.map((step, index) => {
                 const Icon = step.icon
                 return (
-                  // 3. LAS TARJETAS ORIGINALES AHORA SON HIJAS DEL CARRUSEL
-                  <Card key={index} className="h-[350px] border-t-4 border-t-accent shadow-lg transition-all select-none">
-                    <CardContent className="flex h-full flex-col justify-center p-8 text-center">
-                      <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-primary text-primary-foreground mx-auto">
+                  <Card key={index} className="h-[400px] border-t-4 border-t-accent shadow-lg transition-all select-none bg-card overflow-hidden">
+                    <CardContent className="flex h-full flex-col p-8 text-center">
+                      <div className="mb-6 inline-flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground mx-auto">
                         <Icon className="h-8 w-8" />
                       </div>
-                      <h3 className="font-serif text-2xl font-bold mb-4">{step.title}</h3>
-                      <p className="text-base leading-relaxed text-muted-foreground">{step.description}</p>
+                      <h3 className="font-serif text-2xl font-bold mb-4 shrink-0">{step.title}</h3>
+                      
+                      {/* AQUÍ ESTÁ LA MAGIA: 
+                         1. 'line-clamp-6': Corta el texto a 6 líneas en la tarjeta pequeña.
+                         2. 'text-ellipsis': Pone los "..." al final.
+                         3. La clase personalizada [.expanded-card-modal_&]:line-clamp-none 
+                            significa: "Si estoy dentro de un elemento con clase 'expanded-card-modal',
+                            quita el límite de líneas".
+                      */}
+                      <div className="relative overflow-hidden">
+                         <p className="text-base leading-relaxed text-muted-foreground line-clamp-6 [.expanded-card-modal_&]:line-clamp-none [.expanded-card-modal_&]:text-lg">
+                           {step.description}
+                         </p>
+                         
+                         {/* Degradado para indicar que hay más texto (solo visible en modo tarjeta) */}
+                         <div className="absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-card to-transparent [.expanded-card-modal_&]:hidden" />
+                      </div>
+
                     </CardContent>
                   </Card>
                 )})}
