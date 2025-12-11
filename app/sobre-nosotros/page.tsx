@@ -4,7 +4,6 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Award, Target, Heart, Users, Briefcase, FileSearch, Scale, CheckCircle } from "lucide-react"
 import Image from "next/image"
-// 1. IMPORTAMOS EL NUEVO COMPONENTE
 import { CoverFlowCarousel } from "@/components/ui/cover-flow-carousel"
 
 export const metadata = {
@@ -14,27 +13,26 @@ export const metadata = {
 }
 
 export default function AboutPage() {
-  // Datos para la nueva sección de Proceso
   const process = [
     {
       icon: Briefcase,
-      title: "1. Consulta Inicial",
+      title: "1. Consulta Inicial y Diagnóstico",
       description: "Nuestra primera interacción es fundamental. En esta etapa, realizamos una entrevista exhaustiva para escuchar su relato, entender sus objetivos y recopilar los antecedentes básicos. Evaluamos la situación para determinar si existe un caso legal viable, verificamos la ausencia de conflictos de interés y le ofrecemos un diagnóstico preliminar honesto sobre las posibilidades de éxito y los riesgos involucrados.",
     },
     {
       icon: FileSearch,
-      title: "2. Análisis y Estrategia",
-      description: "Una vez aceptado el caso, nuestro equipo realiza un estudio técnico profundo de la documentación y la normativa aplicable. Diseñamos una Hoja de Ruta Legal personalizada que define la estrategia a seguir. En esta fase, le presentamos una propuesta formal de servicios que detalla transparentemente los honorarios, los costos procesales y los tiempos estimados, formalizando nuestra relación mediante un contrato de servicios.",
+      title: "2. Investigación, Estrategia y Propuesta",
+      description: "Una vez aceptado el caso, nuestro equipo realiza un estudio técnico profundo de la documentación y la normativa aplicable. Diseñamos una Hoja de Ruta Legal personalizada que define la estrategia a seguir. En esta fase, le presentamos una propuesta formal de servicios que detalla transparentemente los honorarios, los costos procesales y los tiempos estimados.",
     },
     {
       icon: Scale,
-      title: "3. Representación Legal",
-      description: "Ponemos la estrategia en marcha. Ya sea redactando demandas, negociando contratos o representándolo en audiencias, nuestro equipo actúa con diligencia y firmeza. Durante esta etapa, mantenemos una política de comunicación proactiva: usted recibirá actualizaciones periódicas sobre el avance de su expediente, asegurando que nunca se sienta desinformado sobre el estado de sus asuntos legales.",
+      title: "3. Ejecución Legal y Gestión Activa",
+      description: "Ponemos la estrategia en marcha. Ya sea redactando demandas, negociando contratos o representándolo en audiencias, nuestro equipo actúa con diligencia y firmeza. Durante esta etapa, mantenemos una política de comunicación proactiva: usted recibirá actualizaciones periódicas sobre el avance de su expediente, asegurando que nunca se sienta desinformado.",
     },
     {
       icon: CheckCircle,
-      title: "4. Resolución",
-      description: "Nuestro objetivo es alcanzar la resolución más favorable posible, ya sea mediante una sentencia judicial, un acuerdo extrajudicial o la finalización de un trámite administrativo. Al concluir, le entregamos un informe final detallado, explicamos las implicaciones legales del resultado y le asesoramos sobre los pasos futuros necesarios para asegurar el cumplimiento de lo resuelto.",
+      title: "4. Resolución, Resultados y Cierre",
+      description: "Nuestro objetivo es alcanzar la resolución más favorable posible, ya sea mediante una sentencia judicial, un acuerdo extrajudicial o la finalización de un trámite administrativo. Al concluir, le entregamos un informe final detallado, explicamos las implicaciones legales del resultado y le asesoramos sobre los pasos futuros necesarios.",
     },
   ]
 
@@ -181,7 +179,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* REEMPLAZO: Process Section con Cover Flow Carousel */}
+        {/* PROCESO DE TRABAJO */}
         <section className="bg-muted py-16 md:py-24 overflow-hidden">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-8">
@@ -191,32 +189,35 @@ export default function AboutPage() {
               </p>
             </div>
 
-            {/* 2. USAMOS EL NUEVO COMPONENTE PARA ENVOLVER LAS TARJETAS */}
             <CoverFlowCarousel>
               {process.map((step, index) => {
                 const Icon = step.icon
                 return (
-                  <Card key={index} className="h-[400px] border-t-4 border-t-accent shadow-lg transition-all select-none bg-card overflow-hidden">
-                    <CardContent className="flex h-full flex-col p-8 text-center">
-                      <div className="mb-6 inline-flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground mx-auto">
+                  // AQUÍ ESTÁ EL CAMBIO CLAVE 1:
+                  // [.expanded-card-modal_&]:h-auto  -> Permite que la tarjeta crezca en el modal
+                  <Card key={index} className="h-[400px] [.expanded-card-modal_&]:h-auto border-t-4 border-t-accent shadow-lg transition-all select-none bg-card overflow-hidden [.expanded-card-modal_&]:overflow-visible">
+                    <CardContent className="flex h-full flex-col p-8 text-center [.expanded-card-modal_&]:h-auto">
+                      <div className="mb-4 inline-flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground mx-auto">
                         <Icon className="h-8 w-8" />
                       </div>
                       <h3 className="font-serif text-2xl font-bold mb-4 shrink-0">{step.title}</h3>
                       
-                      {/* AQUÍ ESTÁ LA MAGIA: 
-                         1. 'line-clamp-6': Corta el texto a 6 líneas en la tarjeta pequeña.
-                         2. 'text-ellipsis': Pone los "..." al final.
-                         3. La clase personalizada [.expanded-card-modal_&]:line-clamp-none 
-                            significa: "Si estoy dentro de un elemento con clase 'expanded-card-modal',
-                            quita el límite de líneas".
-                      */}
-                      <div className="relative overflow-hidden">
-                         <p className="text-base leading-relaxed text-muted-foreground line-clamp-6 [.expanded-card-modal_&]:line-clamp-none [.expanded-card-modal_&]:text-lg">
-                           {step.description}
-                         </p>
+                      {/* AQUÍ ESTÁ EL CAMBIO CLAVE 2: */}
+                      {/* [.expanded-card-modal_&]:overflow-visible -> Permite que el texto se vea completo en el modal */}
+                      <div className="relative overflow-hidden flex-1 [.expanded-card-modal_&]:overflow-visible [.expanded-card-modal_&]:flex-none">
+                         <div className="h-full overflow-y-auto md:overflow-hidden scrollbar-hide [.expanded-card-modal_&]:h-auto [.expanded-card-modal_&]:overflow-visible">
+                            <p className="text-base leading-relaxed text-muted-foreground line-clamp-none md:line-clamp-6 [.expanded-card-modal_&]:line-clamp-none [.expanded-card-modal_&]:text-lg">
+                              {step.description}
+                            </p>
+                         </div>
                          
-                         {/* Degradado para indicar que hay más texto (solo visible en modo tarjeta) */}
-                         <div className="absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-card to-transparent [.expanded-card-modal_&]:hidden" />
+                         {/* Degradado solo visible en PC y cuando NO es modal */}
+                         <div className="hidden md:block absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-card to-transparent [.expanded-card-modal_&]:hidden" />
+                      </div>
+
+                      {/* Indicador solo en móvil */}
+                      <div className="mt-2 md:hidden text-xs text-muted-foreground/50 animate-pulse font-medium [.expanded-card-modal_&]:hidden">
+                        Desliza texto para leer ↓
                       </div>
 
                     </CardContent>
